@@ -96,7 +96,7 @@
      display: flex;
       padding: 40px;
       align-items: center;
-      /* height: 100vh; */
+      height: 94vh;
  }
  #hero h1{
      font-size: 3rem;
