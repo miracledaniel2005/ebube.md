@@ -1,59 +1,401 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>check</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>impact</title>
+	<link rel="stylesheet" type="text/css" href="my impact website.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome-free-6.1.1-web/css/all.css">
 </head>
 <body>
-    <h1>People enterd</h1>
-    <h2 id="count-el">0</h2>
-    <div class="btn">
-    <button id="increment-btn" onclick="increment()">INCREMENT</button>
-    <button onclick="save()" id="save-btn">SAVE</button>
-</div>
-<p id="save-el">Previous entries: </p>
-<p id="welcome-el"></p>
-<div class="game">
-    <h1>JACK WHOT</h1>
-    <p class="message-el">Want to play some game</p>
-    <p id="cards-el">Cards:</p>
-    <p id="sum-el2">Sum:</p>
-    <div class="btn">
-        <button onclick="startGame()">START GAME</button>
-        <button onclick="newCard()">NEW CARD</button>
-    </div>
-</div>
-<br>
-<br>
-<div class="nike">
-    <img src="c:\Users\USER\OneDrive\Desktop\ebube images\25_Whatsapp-Dp-images-FunyLife.in_-1024x1024.jpg" id="image" width="20%" style="margin-left: auto; margin-right:auto;">
-    <button id="purchase" onclick="purchase()">Purchase - $149</button>
-    <p id="error"></p>
-</div>
-<br>
-<br>
-<div class="calculator">
-    <span id="num1-el"></span>
-    <span id="num2-el"></span>
-    <br>
-    <br>
-    <button onclick="add()">Add</button>
-    <button onclick="subtract()">Subtract</button>
-    <button onclick="divide()">Divide</button>
-    <br>
-    <br>
-    <button onclick="multiply()">Multiply</button>
-    <br>
-    <br>
-    <span id="sum-el">Sum: </span>
-</div>
-<br>
-<br>
-<p id="greeting-el"></p>
-<br>
-<br>
-<br>
-<h2 id="message"></h2>
+	<!-- header -->
+	<header>
+		<a href="#" class="brand">Impact</a>
+		<nav>
+			<ul id="openNav">
+				<i class="fa fa-close" id="closeBar" title="Close nav bar"></i>
+				<li><a href="#" id="nav1">Home</a></li>
+				<li><a href="#about" id="nav2">About</a></li>
+				<li><a href="#services" id="nav3">Services</a></li>
+				<li><a href="#team" id="nav4">Team</a></li>
+				<li><a href="#contact" id="nav5">Contact</a></li>
+			</ul>
+			<i class="fa fa-bars" id="bar" title="Open nav bar"></i>
+		</nav>
+	</header>
+	<!-- section -->
+	<section id="hero">
+		<article id="first">
+			<h1>Welcome to Impact</h1>
+			<p>At Impact, we believe that every action, no matter how small, has the potential to create a ripple effect that can bring about significant change.</p>
+			<a href="#" class="btn">Get Started</a>
+		</article>
+		<article>
+			<img src="images/hero-img.svg" width="100%">
+		</article>
+	</section>
+	<!-- about -->
+	<section id="about" class="reveal">
+		<h1>About Us</h1>
+		<p>
+            We believe that a small group of passionate people is all it takes to Create impact.com. We are not satisfied with the status quo. We are not satisfied with business as usual. We are not satisfied with anything less than greatness.
+        </p>
+		<article>
+			<div>
+				<img src="images/team.jpg">
+			</div>
+			<div>
+				<ul>
+					<li>We are reliable</li>
+					<li>We offers 24/7 support to our customers </li>
+					<li>Our servcies are affordable</li>
+				</ul>
+				<p>
+                    We believe that growth drives happiness, and so we aim to perform at our highest level and inspire our teammates to do the same. We develop the balance necessary to sustain that peak performance knowing it is as valuable as the work itself. This is how we create a culture that attracts, keeps, and grows amazing people.
+                </p>
+			</div>
+		</article>
+	</section>
+	<!-- subscribe -->
+	<section id="subscribe" class="reveal">
+		        <p>
+                Subscribe so that you will be the first person to receive our notification. 
+            </p>
+                <form action="#">
+				<div>
+					<input type="email" placeholder="Enter your email" required>
+					<button>Subscribe</button>
+				</div>
+            </form>
+	</section>
+	<!-- services -->
+	<section id="services" class="reveal">
+		<h1>Our Services</h1>
+		<p>
+            We are best in designs. We are transformational. We are Growth Technologists. And we Create Impact.
+        </p>
+		<article>
+			<div>
+				<span>
+				<i class="fa fa-code"></i>
+				</span>
+				<h2>Web Design</h2>
+				<p>Web design and development is an umbrella term that describes the process of creating a website. Like the name suggests, it involves two major skill sets: web design and web development. Web design determines the look and feel of a website, while web development determines how it functions. we create and design websites.</p>
+		        <a href="#">Read more</a>
+			</div>
+				<div>
+					<span>
+				<i class="fa fa-crop-alt"></i>
+				</span>
+				<h2>UI/UX Design</h2>
+				<p>User interface (UI) design refers to the aesthetic elements by which people interact with a product, such as buttons, icons, menu bars, typography, colors, and more. User experience (UX) design refers to the experience a user has when interacting with a product. we create UI/UX Design</p>
+		        <a href="#">Read more</a>
+			</div>
+			<div>
+				<span>
+				<i class="fa fa-pen"></i>
+				</span>
+				<h2>Graphic Design</h2>
+				<p>Graphic design is the creation of visual compositions to solve problems and communicate ideas through typography, imagery, color and form. There's no one way to do that, and that's why there are several types of graphic design, each with their own area of specialization. we create graphic designs.</p>
+		        <a href="#">Read more</a>
+			</div>
+		</article>
+			</section>
+			<!-- testimonial -->
+	<section id="testimonial" class="reveal">
+			<h1>Testimonials</h1>
+		    <p>
+                Impact testimonial is a combination of prominent and popular people that have make a name around the world.</p>
+		<article>
+			<div class="card">
+				<div class="header">
+					<img src="images/testimonial1.jpg">
+					<aside>
+						<h3>Sara Wilson</h3>
+						<p>Designer</p>
+						<span>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</span>
+					</aside>
+
+					
+   
+
+					</div>
+					<p id="last-p"> 				
+						<i class="fas fa-quote-left" id="quote"></i> Sara Wilson is a web designer, web developer, and an assistant researcher at MIT. She is a passionate advocate for web standards and one of the few “Invited Experts” in the W3C CSS Working group. <i class="fas fa-quote-right" id="quote"></i>
+            </p>
+				</div>
+				<div class="card">
+				<div class="header">
+					<img src="images/testimonial2.jpg">
+					<aside>
+						<h3>John Morgan</h3>
+						<p>Manager</p>
+						<span>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</span>
+					</aside>
+					</div>
+					<p id="last-p">
+                        <i class="fas fa-quote-left" id="quote"></i> John Morgan is an Italian professional football manager and former player who is the manager of Real Madrid. Nicknamed "Don Carlo", he is regarded as one of the greatest managers of all time. <i class="fas fa-quote-right" id="quote"></i>
+            </p>
+				</div>
+				<div class="card">
+				<div class="header">
+					<img src="images/testimonial3.jpg">
+					<aside>
+						<h3>Jude Ben</h3>
+						<p>Developer</p>
+						<span>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</span>
+					</aside>
+					</div>
+					<p id="last-p"> <i class="fas fa-quote-left" id="quote"></i> Jude Ben is a Finnish software engineer who is the creator and lead developer of the Linux kernel, used by Linux distributions like Debian, Arch and Android. He also created the distributed version control system Git. <i class="fas fa-quote-right" id="quote"></i></p>
+				</div>
+		</article>
+	</section>
+	<section id="team" class="reveal">
+		<h1>Our Team</h1>
+		<p>Our team is made up of very prominent persons, such like web designers, accountant and content creator.</p>
+		<article>
+			<div>
+				<img src="images/team-1.jpg">
+				<h2>Walter White</h2>
+				<p>Web Designer</p>
+				<nav class="social">
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</nav>
+			</div>
+			<div>
+				<img src="images/team-2.jpg">
+				<h2>Sarah Jhinson</h2>
+				<p>Marketing</p>
+				<nav class="social">
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</nav>
+			</div>
+			<div>
+				<img src="images/team-3.jpg">
+				<h2>William Anderson</h2>
+				<p>Content</p>
+				<nav class="social">
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</nav>
+			</div>
+			<div>
+				<img src="images/team-4.jpg">
+				<h2>Amanda Jepson</h2>
+				<p>Accountant</p>
+				<nav class="social">
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</nav>
+			</div>
+
+		</article>
+        </section>
+        <!-- contact-->
+        <section id="contact" class="reveal">
+        	<h1>Contact</h1>
+        	<p>You can reach out to us through the following medium</p>
+        	<article>
+        		<div class="col">
+        			<div class="card">
+						<span>
+        				<i class="fa fa-location-dot"></i>
+                        </span>
+        				<aside>
+        					<h3>Location:</h3>
+        					<p>
+								<a href="https://www.google.com/maps/place/Ny+State+Rest+Area,+Sheridan,+NY+14136,+USA/@42.5385959,-79.2167038,17z/data=!3m1!4b1!4m6!3m5!1s0x89d2d06f77f55e9f:0x7050d8b94799da6a!8m2!3d42.538592!4d-79.2141289!16s%2Fg%2F1tx8v5q2?entry=ttu" id="small">
+									A108 Adam Street, New York, NY 535022
+                                </a>
+                            </p>
+        				</aside>
+        			</div>
+        			<div class="card">
+						<span>
+        				<i class="fa fa-envelope"></i>
+						</span>
+        				<aside>
+        					<h3>Email:</h3>
+        					<p>
+                                <a href="mailto:eeze09140@gmail.com" id="small">
+                                    eeze09140@gmail.com
+                                </a>
+                            </p>
+        				</aside>
+        			</div>
+        			<div class="card">
+						<span>
+        				<i class="fa fa-mobile"></i>
+						</span>
+        				<aside>
+        					<h3>Call:</h3>
+        					<p>
+                                <a href="tel:09023130113" id="small">
+                                +243 9023130113
+                            </a>
+                            </p>
+        				</aside>
+        			</div>
+        			<div class="card">
+						<span>
+        				<i class="fa fa-clock"></i>
+                        </span>
+        				<aside>
+        					<h3>Open Hours:</h3>
+        					<p id="small">Mon-Sat: 11AM-23PM</p>
+        				</aside>
+        			</div>
+        		</div>
+        		<div class="form-container">
+        			<form action="#">
+        				<div class="input-container">
+        					<input type="text" placeholder="Your Name" required>
+        					<input type="email"  placeholder="Your Email" required>
+        				</div>
+        				<input type="text" placeholder="Subject" required>
+        				<textarea cols="20" rows="6" placeholder="Message" required></textarea>
+        				<button class="btn">Send Message</button>
+        			</form>
+        		</div>
+        	</article>
+        </section>
+
+		
+        <footer class="reveal">
+			<section>
+        	<article>
+        		<a href="#" class="brand">Impact</a>
+        		<p>
+                    We believe in the power of science and technology to create transformational growth: in our customers, in our company, and in ourselves. And we are in business to create impact through partnerships.
+                </p>
+        		<nav class="social">
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</nav>
+        	</article>
+        	<article>
+        		<div>
+                    <label for="tick1" id="lab1">
+        			<h3>Useful Links <i class="fa fa-angle-down"></i></h3>
+                </label>
+                    <input type="checkbox" id="tick1">
+        			<ul>
+        				<li><a href="#hero">Home</a></li>
+        				<li><a href="#about">About Us</a></li>
+        				<li><a href="#services">Services</a></li>
+        				<li><a href="#">Terms of Service</a></li>
+        				<li><a href="#">Privacy Policy</a></li>
+        			</ul>
+        		</div>
+        		<div>
+                    <label for="tick2">
+        			<h3>Our Services <i class="fa fa-angle-down"></i></h3>
+                </label>
+                <input type="checkbox" id="tick2">
+        			<ul>
+        				<li><a href="#">Web Design</a></li>
+        				<li><a href="#">Web Development</a></li>
+        				<li><a href="#">Product Manager</a></li>
+        				<li><a href="#">Marketing</a></li>
+        				<li><a href="#">Graphic Design</a></li>
+        			</ul>
+        		</div>
+        		<div>
+                    <label for="tick3">
+        			<h3 class="contact">Contact Us <i class="fa fa-angle-down"></i></h3>
+                </label>
+                <input type="checkbox" id="tick3">
+                <div id="display-ul">
+        			<p>
+                        <a href="https://www.google.com/maps/place/Ny+State+Rest+Area,+Sheridan,+NY+14136,+USA/@42.5385959,-79.2167038,17z/data=!3m1!4b1!4m6!3m5!1s0x89d2d06f77f55e9f:0x7050d8b94799da6a!8m2!3d42.538592!4d-79.2141289!16s%2Fg%2F1tx8v5q2?entry=ttu">
+                            A108 Adam Street, New York, NY 535022 United States
+                        </a>
+                    </p>
+        			<p class="phone"><span>Phone:
+
+					</span><a href="tel:+123 9123130113">+123 9123130113</a></p>
+				<p><span>Email:</span><a href="mailto:eeze091140@gmail.com">
+                    eeze091140@gmail.com</a></div></p>
+                    </div>
+        		</div>
+        	</article>
+			<div>
+        	<p>&copy; Copyright <b>Impact.</b> All Rights Reserved</p>
+		<p>Designed by Eze Ebube M.D</p>
+		</div>
+        </section>	
+        </footer>
 </body>
+<script src="my impact website.js"></script>
 </html>
