@@ -1,0 +1,128 @@
+*{
+    outline: 0;
+}
+body{
+    background-color:rgba(255, 235, 205, 0.5);
+    margin:14px 16px;
+}
+#fh1{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+    box-sizing: border-box;
+    background-color: rgb(234, 227, 227);
+    border-radius:20px;
+    text-align: center;
+    box-shadow: 7px 7px 1px whitesmoke;
+    height:550px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    padding: 25px;
+}
+#account{
+    text-decoration: none;
+    color:purple;
+}
+#fb{
+    color:#000000;
+    text-decoration: none;
+    background-color: white;
+    width: 40px;
+    border-radius:50px;
+    font-size: 50px;
+    box-shadow:3px 3px 3px whitesmoke;
+    padding:5px;
+    margin: 14px 16px;
+    cursor: pointer;
+    transition:0.9s;
+}
+#fb:hover{
+    width:50px;
+    color:white;
+    background-color:#3b5998;
+}
+#twit{
+    color:#000000;
+    text-decoration: none;
+    background-color: white;
+    width: 40px;
+    border-radius:50px;
+    font-size:50px;
+    box-shadow:3px 3px 3px whitesmoke;
+    padding:5px;
+    margin: 14px 16px;
+    cursor: pointer;
+    transition:0.9s;
+}
+#twit:hover{
+    width:50px;
+    color:white;
+    background-color:#55acee;
+}
+input{
+    width:98%;
+    height: 25px;
+    background-color:rgba(249, 242, 242, 0.812);
+    border-radius:5px;
+    transition:0.9s;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    border: none;
+}
+input:focus{
+    box-shadow: 0 0 30px;
+    height:40px;
+    border-radius:15px;
+    border-top-color:black;
+    border-bottom-color:black;
+    border-right-color:black;
+    border-left-color:black;
+    background-color:white;
+}
+::placeholder{
+    color: #ff3d93;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#forget{
+    text-decoration: none;
+    color:rgba(0,0,0,0.5);
+    transition:0.8s;
+}
+#forget:hover{
+    color: blue;
+    text-decoration:underline;
+    cursor: pointer;
+}
+button{
+    background-color:#ff3d93;
+    color: white;
+    width:25%;
+    border-radius:20px;
+    border-right-color:#ff3d93;
+    border-left-color:#ff3d93;
+    border-top-color:#ff3d93;
+    border-bottom-color:#ff3d93;
+    cursor:pointer;
+    transition:0.7s;
+    box-shadow:3px 3px 3px #c8206c;
+}
+button:hover{
+    height:25px;
+    background-color:#228b22;
+    border-right-color:#14a314;
+    border-left-color:#14a314;
+    border-top-color:#14a314;
+    border-bottom-color:#14a314;
+    width:29%;
+    box-shadow:3px 3px 3px #228b22;
+}
+#italic{
+    font-weight:bold;
+}
+#create{
+    text-decoration:none;
+    color: blue;
+    font-weight: bold;
+}
