@@ -1,401 +1,271 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>impact</title>
-	<link rel="stylesheet" type="text/css" href="my impact website.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="ifetike website.css">
+    <title>ifetike website</title>
 </head>
 <body>
-	<!-- header -->
-	<header>
-		<a href="#" class="brand">Impact</a>
-		<nav>
-			<ul id="openNav">
-				<i class="fa fa-close" id="closeBar" title="Close nav bar"></i>
-				<li><a href="#" id="nav1">Home</a></li>
-				<li><a href="#about" id="nav2">About</a></li>
-				<li><a href="#services" id="nav3">Services</a></li>
-				<li><a href="#team" id="nav4">Team</a></li>
-				<li><a href="#contact" id="nav5">Contact</a></li>
-			</ul>
-			<i class="fa fa-bars" id="bar" title="Open nav bar"></i>
-		</nav>
-	</header>
-	<!-- section -->
-	<section id="hero">
-		<article id="first">
-			<h1>Welcome to Impact</h1>
-			<p>At Impact, we believe that every action, no matter how small, has the potential to create a ripple effect that can bring about significant change.</p>
-			<a href="#" class="btn">Get Started</a>
-		</article>
-		<article>
-			<img src="images/hero-img.svg" width="100%">
-		</article>
-	</section>
-	<!-- about -->
-	<section id="about" class="reveal">
-		<h1>About Us</h1>
-		<p>
-            We believe that a small group of passionate people is all it takes to Create impact.com. We are not satisfied with the status quo. We are not satisfied with business as usual. We are not satisfied with anything less than greatness.
-        </p>
-		<article>
-			<div>
-				<img src="images/team.jpg">
-			</div>
-			<div>
-				<ul>
-					<li>We are reliable</li>
-					<li>We offers 24/7 support to our customers </li>
-					<li>Our servcies are affordable</li>
-				</ul>
-				<p>
-                    We believe that growth drives happiness, and so we aim to perform at our highest level and inspire our teammates to do the same. We develop the balance necessary to sustain that peak performance knowing it is as valuable as the work itself. This is how we create a culture that attracts, keeps, and grows amazing people.
-                </p>
-			</div>
-		</article>
-	</section>
-	<!-- subscribe -->
-	<section id="subscribe" class="reveal">
-		        <p>
-                Subscribe so that you will be the first person to receive our notification. 
-            </p>
+    <header>
+        <span id="title" onclick="document.location='index.html'" style="text-align: center;">
+            <h1>Prince Ifetike Chekwube </h1><span id="title-small">Foundation</span>
+        </span>
+        <nav>
+            <ul id="all-ul">
+                <input type="checkbox" id="check">
+                <input type="checkbox" id="check2">
+                <i class="fa fa-close" title="Close nav"></i>
+                <li class="click"><a href="#">Home</a></li>
+                <li id="nested">
+                    <a href="#"><label for="check" style="cursor: pointer;">About</label></a> <i class="fa fa-angle-down"></i>
+                    <ul id="nested-in" class="first-child">
+                        <li class="click2"><a href="#">Who We Are</a></li>
+                        <li class="click3"><a href="#about">About Us</a></li>
+                        <li class="click4"><a href="#team">Our Team</a></li>   
+                    </ul>
+                </li>
+                <li id="nested">
+                    <a href="#"><label for="check2" style="cursor: pointer;">Our Programmes</label></a> <i class="fa fa-angle-down"></i>
+                    <ul id="nested-in" class="last-child">
+                        <li class="click5"><a href="#">Web Design</a></li>
+                        <li class="click6"><a href="#">Graphics Design</a></li>
+                        <li class="click7"><a href="#">Waste well</a></li>
+                        <li class="click8"><a href="#">Python Programming</a></li>
+                        <li class="click9"><a href="#">Bio-degradeble Waste</a></li>
+                    </ul>
+                </li>
+                <li class="click10"><a href="#gallery">Gallery</a></li>
+                <li class="click11"><a href="#contact">Contact</a></li>
+                <button id="btn" onclick="document.location='#'">DONATE NOW</button>
+            </ul>
+        </nav>
+        <button onclick="document.location='#'">DONATE NOW</button>
+        <i class="fa fa-bars" title="Open nav"></i>
+    </header>
+    <section id="hero">
+        <div class="content">
+            <h1>Providing empowerment, skill acqusition and social rehabilitation to the kids, Youths, elderly, widows and the volunarable in the society.</h1>
+            <div class="btn">
+                <button onclick="document.location='#'">Get Started</button>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="reveal">
+        <h1>About Us</h1>
+        <p>We believe that a small group of passionate people is all it takes to Create a sustainable development. We are not satisfied with the status quote. We are not satisfied with business as usual. We are not satisfied with anything less than greatness.</p>
+        <article>
+            <div class="about-img"></div>
+            <div class="about-text">
+                <ul>
+                    <li>We are reliable</li>
+                    <li>We offers 24/7 support to our customers</li>
+                    <li>Our servcies are affordable</li>
+                </ul>
+                <p>Welcome to Prince Ifetike Chekwube Foundation official website for the rememberance of my late Mum Ifetike Elizabeth Nwakacha with the sole aim of people providing empowerment, skill acqusition and social rehabilitation to the kids, Youths, elderly, widows and the volunarable in the society.</p>
+                <div class="more">
+                    <button onclick="document.location='#'">MORE ABOUT US</button>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="team" class="reveal">
+        <h1>Our Team</h1>
+        <p>Our team is made up of very prominent persons, such like web designers, accountant and content creators.</p>
+        <main>
+        <article>
+            <img src="../Master ifetike website/ifetike website images/about-image.jpg">
+            <h1>Prince Ifetike Chekwube</h1>
+            <p>Founder of Ifetike Chekwube Foundation</p>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </article>
+        <article>
+            <img src="../Master ifetike website/ifetike website images/my image2.png">
+            <h1>Eze Ebube M.D</h1>
+            <p>Web Designer</p>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </article>
+        <article>
+            <img src="../Master ifetike website/ifetike website images/team-1.jpg">
+            <h1>Eze Izuchukwu</h1>
+            <p>Graphics Designer</p>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </article>
+        <article>
+            <img src="../Master ifetike website/ifetike website images/team-2.jpg">
+            <h1>Okechukwu Chibuzor</h1>
+            <p>Artist</p>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </article>
+        </main>
+    </section>
+    <section id="subscribe" class="reveal">
+        <article>
+            <p>Providing empowerment, skill acqusition and social rehabilitation to the kids, Youths, elderly, widows and the volunarable in the society.</p>
                 <form action="#">
-				<div>
-					<input type="email" placeholder="Enter your email" required>
-					<button>Subscribe</button>
-				</div>
+                <input type="email" name="e-mail" placeholder="Enter user email" id="email-el" required>
+                <button>SUBSCRIBE</button>
             </form>
-	</section>
-	<!-- services -->
-	<section id="services" class="reveal">
-		<h1>Our Services</h1>
-		<p>
-            We are best in designs. We are transformational. We are Growth Technologists. And we Create Impact.
-        </p>
-		<article>
-			<div>
-				<span>
-				<i class="fa fa-code"></i>
-				</span>
-				<h2>Web Design</h2>
-				<p>Web design and development is an umbrella term that describes the process of creating a website. Like the name suggests, it involves two major skill sets: web design and web development. Web design determines the look and feel of a website, while web development determines how it functions. we create and design websites.</p>
-		        <a href="#">Read more</a>
-			</div>
-				<div>
-					<span>
-				<i class="fa fa-crop-alt"></i>
-				</span>
-				<h2>UI/UX Design</h2>
-				<p>User interface (UI) design refers to the aesthetic elements by which people interact with a product, such as buttons, icons, menu bars, typography, colors, and more. User experience (UX) design refers to the experience a user has when interacting with a product. we create UI/UX Design</p>
-		        <a href="#">Read more</a>
-			</div>
-			<div>
-				<span>
-				<i class="fa fa-pen"></i>
-				</span>
-				<h2>Graphic Design</h2>
-				<p>Graphic design is the creation of visual compositions to solve problems and communicate ideas through typography, imagery, color and form. There's no one way to do that, and that's why there are several types of graphic design, each with their own area of specialization. we create graphic designs.</p>
-		        <a href="#">Read more</a>
-			</div>
-		</article>
-			</section>
-			<!-- testimonial -->
-	<section id="testimonial" class="reveal">
-			<h1>Testimonials</h1>
-		    <p>
-                Impact testimonial is a combination of prominent and popular people that have make a name around the world.</p>
-		<article>
-			<div class="card">
-				<div class="header">
-					<img src="images/testimonial1.jpg">
-					<aside>
-						<h3>Sara Wilson</h3>
-						<p>Designer</p>
-						<span>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						</span>
-					</aside>
-
-					
-   
-
-					</div>
-					<p id="last-p"> 				
-						<i class="fas fa-quote-left" id="quote"></i> Sara Wilson is a web designer, web developer, and an assistant researcher at MIT. She is a passionate advocate for web standards and one of the few “Invited Experts” in the W3C CSS Working group. <i class="fas fa-quote-right" id="quote"></i>
-            </p>
-				</div>
-				<div class="card">
-				<div class="header">
-					<img src="images/testimonial2.jpg">
-					<aside>
-						<h3>John Morgan</h3>
-						<p>Manager</p>
-						<span>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						</span>
-					</aside>
-					</div>
-					<p id="last-p">
-                        <i class="fas fa-quote-left" id="quote"></i> John Morgan is an Italian professional football manager and former player who is the manager of Real Madrid. Nicknamed "Don Carlo", he is regarded as one of the greatest managers of all time. <i class="fas fa-quote-right" id="quote"></i>
-            </p>
-				</div>
-				<div class="card">
-				<div class="header">
-					<img src="images/testimonial3.jpg">
-					<aside>
-						<h3>Jude Ben</h3>
-						<p>Developer</p>
-						<span>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						</span>
-					</aside>
-					</div>
-					<p id="last-p"> <i class="fas fa-quote-left" id="quote"></i> Jude Ben is a Finnish software engineer who is the creator and lead developer of the Linux kernel, used by Linux distributions like Debian, Arch and Android. He also created the distributed version control system Git. <i class="fas fa-quote-right" id="quote"></i></p>
-				</div>
-		</article>
-	</section>
-	<section id="team" class="reveal">
-		<h1>Our Team</h1>
-		<p>Our team is made up of very prominent persons, such like web designers, accountant and content creator.</p>
-		<article>
-			<div>
-				<img src="images/team-1.jpg">
-				<h2>Walter White</h2>
-				<p>Web Designer</p>
-				<nav class="social">
-					<a href="#">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-facebook"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-linkedin"></i>
-					</a>
-				</nav>
-			</div>
-			<div>
-				<img src="images/team-2.jpg">
-				<h2>Sarah Jhinson</h2>
-				<p>Marketing</p>
-				<nav class="social">
-					<a href="#">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-facebook"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-linkedin"></i>
-					</a>
-				</nav>
-			</div>
-			<div>
-				<img src="images/team-3.jpg">
-				<h2>William Anderson</h2>
-				<p>Content</p>
-				<nav class="social">
-					<a href="#">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-facebook"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-linkedin"></i>
-					</a>
-				</nav>
-			</div>
-			<div>
-				<img src="images/team-4.jpg">
-				<h2>Amanda Jepson</h2>
-				<p>Accountant</p>
-				<nav class="social">
-					<a href="#">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-facebook"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-linkedin"></i>
-					</a>
-				</nav>
-			</div>
-
-		</article>
-        </section>
-        <!-- contact-->
-        <section id="contact" class="reveal">
-        	<h1>Contact</h1>
-        	<p>You can reach out to us through the following medium</p>
-        	<article>
-        		<div class="col">
-        			<div class="card">
-						<span>
-        				<i class="fa fa-location-dot"></i>
+            </article>
+    </section>
+    <section id="gallery" class="reveal">
+        <h1>Gallery</h1>
+        <p>Providing empowerment, skill acqusition and social rehabilitation to the kids, Youths, elderly, widows and the volunarable in the society.</p>
+        <main>
+            <div class="slider">
+                <div class="slide">
+                    <img src="../Master ifetike website/ifetike website images/gallery9.jpg">
+                    <img src="../Master ifetike website/ifetike website images/gallery10.jpg">
+                    <img src="../Master ifetike website/ifetike website images/gallery11.jpg">
+                    <img src="../Master ifetike website/ifetike website images/343593179_243454908203857_2080549636791766320_n(1).jpg">
+                    <img src="">
+                    <img src="../Master ifetike website/ifetike website images/gallery5.jpg">
+                    <img src="../Master ifetike website/ifetike website images/gallery6.jpg">
+                    <img src="../Master ifetike website/ifetike website images/gallery7.jpg">
+                    <img src="../Master ifetike website/ifetike website images/gallery8.jpg">
+                </div>
+            </div>
+            <article>
+                <p>Providing empowerment, skill acqusition and social rehabilitation to the kids, Youths, elderly, widows and the volunarable in the society.</p>
+                <div class="visit">
+                    <button onclick="document.location='#'">VISIT GALLERY</button>
+                </div>
+            </article>
+        </main>
+    </section>
+    <section id="contact" class="reveal">
+        <h1>Contact</h1>
+        <p>You can get in touch with us through the following medium</p>
+        <main>
+            <article>
+                <aside>
+                    <i class="fa fa-location-dot"></i>
+                    <span>
+                        <h3>Location:</h3>
+                        <a href="https://www.google.com/maps/dir//Prince+Ifetike+Chekwube+Foundation/data=!4m8!4m7!1m0!1m5!1m1!1s0x10447bdaca27bc89:0xa2dcb45caea74d1c!2m2!1d7.0031842!2d6.4607113">HRM Igwe SU Ifetike Palace Otu Umerum
+                            Umerum, Anambra
+                            Nigeria</a>
+                    </span>
+                </aside>
+                <aside>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h3>Email:</h3>
+                        <a href="mailto:eeze09140@gmail.com">eeze09140@gmail.com</a>
+                    </span>
+                </aside>
+                <aside>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h3>Call:</h3>
+                        <a href="tel:08062608637">+234 806 260 8637</a>
+                    </span>
+                </aside>
+                <aside>
+                        <i class="fa fa-clock"></i>
+                        <span>
+                            <h3>Open Hours:</h3>
+                            <p>Mon-Fri: 9:00am-5:00pm</p>
                         </span>
-        				<aside>
-        					<h3>Location:</h3>
-        					<p>
-								<a href="https://www.google.com/maps/place/Ny+State+Rest+Area,+Sheridan,+NY+14136,+USA/@42.5385959,-79.2167038,17z/data=!3m1!4b1!4m6!3m5!1s0x89d2d06f77f55e9f:0x7050d8b94799da6a!8m2!3d42.538592!4d-79.2141289!16s%2Fg%2F1tx8v5q2?entry=ttu" id="small">
-									A108 Adam Street, New York, NY 535022
-                                </a>
-                            </p>
-        				</aside>
-        			</div>
-        			<div class="card">
-						<span>
-        				<i class="fa fa-envelope"></i>
-						</span>
-        				<aside>
-        					<h3>Email:</h3>
-        					<p>
-                                <a href="mailto:eeze09140@gmail.com" id="small">
-                                    eeze09140@gmail.com
-                                </a>
-                            </p>
-        				</aside>
-        			</div>
-        			<div class="card">
-						<span>
-        				<i class="fa fa-mobile"></i>
-						</span>
-        				<aside>
-        					<h3>Call:</h3>
-        					<p>
-                                <a href="tel:09023130113" id="small">
-                                +243 9023130113
-                            </a>
-                            </p>
-        				</aside>
-        			</div>
-        			<div class="card">
-						<span>
-        				<i class="fa fa-clock"></i>
-                        </span>
-        				<aside>
-        					<h3>Open Hours:</h3>
-        					<p id="small">Mon-Sat: 11AM-23PM</p>
-        				</aside>
-        			</div>
-        		</div>
-        		<div class="form-container">
-        			<form action="#">
-        				<div class="input-container">
-        					<input type="text" placeholder="Your Name" required>
-        					<input type="email"  placeholder="Your Email" required>
-        				</div>
-        				<input type="text" placeholder="Subject" required>
-        				<textarea cols="20" rows="6" placeholder="Message" required></textarea>
-        				<button class="btn">Send Message</button>
-        			</form>
-        		</div>
-        	</article>
-        </section>
-
-		
-        <footer class="reveal">
-			<section>
-        	<article>
-        		<a href="#" class="brand">Impact</a>
-        		<p>
-                    We believe in the power of science and technology to create transformational growth: in our customers, in our company, and in ourselves. And we are in business to create impact through partnerships.
-                </p>
-        		<nav class="social">
-					<a href="#">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-facebook"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="#">
-						<i class="fab fa-linkedin"></i>
-					</a>
-				</nav>
-        	</article>
-        	<article>
-        		<div>
-                    <label for="tick1" id="lab1">
-        			<h3>Useful Links <i class="fa fa-angle-down"></i></h3>
-                </label>
-                    <input type="checkbox" id="tick1">
-        			<ul>
-        				<li><a href="#hero">Home</a></li>
-        				<li><a href="#about">About Us</a></li>
-        				<li><a href="#services">Services</a></li>
-        				<li><a href="#">Terms of Service</a></li>
-        				<li><a href="#">Privacy Policy</a></li>
-        			</ul>
-        		</div>
-        		<div>
-                    <label for="tick2">
-        			<h3>Our Services <i class="fa fa-angle-down"></i></h3>
-                </label>
-                <input type="checkbox" id="tick2">
-        			<ul>
-        				<li><a href="#">Web Design</a></li>
-        				<li><a href="#">Web Development</a></li>
-        				<li><a href="#">Product Manager</a></li>
-        				<li><a href="#">Marketing</a></li>
-        				<li><a href="#">Graphic Design</a></li>
-        			</ul>
-        		</div>
-        		<div>
-                    <label for="tick3">
-        			<h3 class="contact">Contact Us <i class="fa fa-angle-down"></i></h3>
-                </label>
-                <input type="checkbox" id="tick3">
-                <div id="display-ul">
-        			<p>
-                        <a href="https://www.google.com/maps/place/Ny+State+Rest+Area,+Sheridan,+NY+14136,+USA/@42.5385959,-79.2167038,17z/data=!3m1!4b1!4m6!3m5!1s0x89d2d06f77f55e9f:0x7050d8b94799da6a!8m2!3d42.538592!4d-79.2141289!16s%2Fg%2F1tx8v5q2?entry=ttu">
-                            A108 Adam Street, New York, NY 535022 United States
-                        </a>
-                    </p>
-        			<p class="phone"><span>Phone:
-
-					</span><a href="tel:+123 9123130113">+123 9123130113</a></p>
-				<p><span>Email:</span><a href="mailto:eeze091140@gmail.com">
-                    eeze091140@gmail.com</a></div></p>
+                </aside>
+            </article>
+            <form action="https://formsubmit.co/eeze09140@gmail.com" method="POST">
+                <div class="row1">
+                    <input type="text" placeholder="Enter your name" name="user-name" id="name" required>
+                    <input type="email" placeholder="Enter your email" name="e-mail" id="email" required>
+                </div>
+                <div class="row2">
+                    <input type="text" placeholder="write your compaint" name="input" id="complain" required>
+                    <textarea placeholder="Comment" name="comment" id="comment" cols="30" rows="10" required></textarea>
+                    <div class="submit">
+                        <button id="submit-el">Send Message</button>
                     </div>
-        		</div>
-        	</article>
-			<div>
-        	<p>&copy; Copyright <b>Impact.</b> All Rights Reserved</p>
-		<p>Designed by Eze Ebube M.D</p>
-		</div>
-        </section>	
-        </footer>
+                </div>
+            </form>
+        </main>
+    </section>
+    <footer class="reveal">
+        <main>
+        <div class="sect1">
+            <main id="topic" onclick="document.location='index.html'">
+                <h1>Prince Ifetike Chekwube<br> <span id="title-small">Foundation</span></h1>
+            </main>
+            <form action="#">
+                <input type="email" name="e-mail" placeholder="Enter user email" id="email-el" required>
+                <button>SUBSCRIBE</button>
+            </form>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+            </div>
+        </div>
+        <div class="sect2">
+            <article>
+                <h1>Useful Links</h1>
+                <span>
+                    <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Programmes</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                </span>
+            </article>
+            <article>
+                <h1>Our Programmes</h1>
+                <span>
+                    <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Graphics Design</a></li>
+                    <li><a href="#">Waste well</a></li>
+                    <li><a href="#">Python Programming</a></li>
+                    <li><a href="#">Bio-degradeble Waste</a></li>
+                </ul>
+                </span>
+            </article>
+            <article>
+                <h1>Contact Us</h1>
+                <span>
+                    <h3>Location:</h3>
+                    <li><a href="https://www.google.com/maps/dir//Prince+Ifetike+Chekwube+Foundation/data=!4m8!4m7!1m0!1m5!1m1!1s0x10447bdaca27bc89:0xa2dcb45caea74d1c!2m2!1d7.0031842!2d6.4607113">HRM Igwe SU Ifetike Palace Otu Umerum
+                        Umerum, Anambra
+                        Nigeria</a></li>
+                        <h3>Email:</h3>
+                    <li><a href="mailto:eeze09140@gmail.com">eeze09140@gmail.com</a></li>
+                    <h3>Call:</h3>
+                    <li><a href="tel:08062608637">+234 806 260 8637</a></li>
+                </span>
+            </article>
+        </div>
+        </main>
+    </footer>
+    <script src="ifetike website.js"></script>
 </body>
-<script src="my impact website.js"></script>
 </html>
