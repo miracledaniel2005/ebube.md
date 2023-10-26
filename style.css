@@ -29,7 +29,7 @@ body {
 }
 
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -83,16 +83,17 @@ section {
 }
 
 .home {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 0 9%;
     justify-content: center;
+    height: auto;
 }
 
 .home-content {
     max-width: 60rem;
     z-index: 99;
-    /* position: relative; */
 }
 
 .home-content h1 {
@@ -216,8 +217,9 @@ section {
 
 .home-sci {
     position: absolute;
-    bottom: 4rem;
+    bottom: 9rem;
     width: 200px;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
 }
@@ -258,21 +260,6 @@ section {
 .home-sci a:hover::before {
     width: 100%;
 }
-
-.home-imgHover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
-}
-
-/* .home-imgHover:hover {
-    background: var(--bg-color);
-    opacity: .8;
-} */
 
 .about {
     display: flex;
@@ -744,13 +731,13 @@ section:nth-child(odd) .animate.scroll, .footer .animate.scroll {
 }
 
 /* BREAKPOINTS */
-@media screen and (max-width:1200px) {
+@media (max-width:1200px) {
     html {
         font-size: 55%;
     }
 }
 
-@media screen and (max-width:991px) {
+@media (max-width:991px) {
     .header {
         padding: 2rem 4%;
     }
@@ -768,13 +755,17 @@ section:nth-child(odd) .animate.scroll, .footer .animate.scroll {
     }
 }
 
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
     .animate.home-img {
         width: 55%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+    .home-sci {
+        bottom: 2rem;
+    }
+
     .header {
         background: var(--bg-color);
     }
@@ -840,7 +831,17 @@ section:nth-child(odd) .animate.scroll, .footer .animate.scroll {
     }
 }
 
-@media screen and (max-width: 520px) {
+@media (max-height:700px) {
+    .home {
+        padding-bottom: 70px;
+    }
+
+    .home-sci {
+        bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 520px) {
     html {
         font-size: 50%;
     }
@@ -860,7 +861,7 @@ section:nth-child(odd) .animate.scroll, .footer .animate.scroll {
     }
 }
 
-@media screen and (max-width: 462px) {
+@media (max-width: 462px) {
     .home-content h1 {
         font-size: 5.2rem;
     }
