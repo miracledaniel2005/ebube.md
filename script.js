@@ -1,25 +1,47 @@
+// toggle icon navbar
+let menuIcon = document.querySelector("#menu-icon"),
+navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("bx-x");
+    navbar.classList.toggle("active");
+}
+
+// scroll sections
+let sections = document.querySelectorAll("section"),
+navLinks  = document.querySelectorAll("header nav a");
+
 window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 100;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset && top < offset + height) {
+            // active navbar links
+            navLinks.forEach(links => {
+                links.classList.remove("active");
+                document.querySelector('header nav a[href*=' + id + ']').classList.add("active");
+            });
+            // active sections for animation on scroll
+            sec.classList.add("show-animate");
+        } /*else {
+            sec.classList.remove("show-animate");
+        }*/
+    });
+
+    // sticky header
     let header  = document.querySelector("header");
+
     header.classList.toggle("sticky", window.scrollY > 100);
-}
 
-let hover = document.querySelector(".hover");
-let activate = document.querySelector(".activate");
-let hover2 = document.querySelector(".hover2");
-let activate2 = document.querySelector(".activate2");
+    // remove toggle and navbar when click navbar links (scroll)
+    menuIcon.classList.remove("bx-x");
+    navbar.classList.remove("active");
 
-hover.onmouseenter = () => {
-    activate.classList.add("active");
-}
+    // animation footer on scroll
+    let footer = document.querySelector("footer");
 
-hover.onmouseleave = () => {
-    activate.classList.remove("active");
-}
-
-hover2.onmouseenter = () => {
-    activate2.classList.add("active");
-}
-
-hover2.onmouseleave = () => {
-    activate2.classList.remove("active");
+    footer.classList.toggle("show-animate", this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
