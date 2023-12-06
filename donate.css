@@ -1,0 +1,114 @@
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    --animate-color: #ff2770;
+}
+
+.donate-banner {
+    height: 45vh;
+    background: var(--second-bg-color);
+    /* background-image: url(images/computer-image3.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.donate-banner .text-box p {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.donate-banner .text-box h2 {
+    font-weight: 800;
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+.text {
+    color: var(--main-color);
+    padding: 40px 80px;
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 26px;
+    text-align: justify;
+    background: var(--bg-color);
+}
+
+.donate {
+    display: flex;
+    padding: 20px 80px;
+    background: var(--bg-color);
+}
+
+.donate .bg-image {
+    width: 50%;
+    height: inherit;
+    background-image: url(images/donate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.donate .write-up {
+    width: 50%;
+    height: fit-content;
+    padding: 10px 40px;
+    color: var(--text-color);
+}
+
+.write-up .write1 {
+    padding: 20px 0;
+}
+
+.write-up .write2 {
+    padding: 20px 0;
+}
+
+.write-up h2 {
+    padding: 20px 0;
+    color: var(--main-color);
+}
+
+@media (max-width:1000px) {
+    .donate-banner {
+        padding: 0 20px;
+        text-align: center !important;
+    }
+
+    /* .donate-banner .text-box p {
+        font-weight: 600;
+        font-size: 1.5rem;
+    } */
+    
+    .donate-banner .text-box h2 {
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    .text {
+        color: var(--main-color);
+        padding: 40px;
+        text-align: center;
+    }
+
+    .donate {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .donate .bg-image {
+        width: 100%;
+        height: 400px;
+    }
+
+    .donate .write-up {
+        width: 100%;
+        padding: 10px;
+    }
+}
